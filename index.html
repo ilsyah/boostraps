@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigasi -->
+    <nav class="navbar bg-white navbar-expand-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/ilsyah.png" alt="" width="180" loading="smkrevit" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produk">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promo">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontak</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">SignIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">LogIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider/carousel -->
+    <div class="container mt-4 mb-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators bg-secondary">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- isi dari slider -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/nike1.jpg" class="d-block" alt="..." />
+            <br />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Nike VaporX 12</h5>
+              <p>Lentur,Tahan Lama dan pastinya Terjamin 100%.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/specs.jpg" class="d-block" alt="..." />
+            <br />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Specs LightSpeed</h5>
+              <p>Lentur,Tahan Lama dan pastinya Terjamin 100%.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bbs1.jpg" class="d-block" alt="..." />
+            <br />
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h5>Ortuseight BBS</h5>
+              <p>Lentur,Tahan Lama dan pastinya Terjamin 100%.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tombol kiri kanan -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-center bg-light my-5">
+      <div class="container">
+        <h1 class="display-4">Promo Murah!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4" />
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" id="produk" href="#" role="button">Beli aja !</a>
+      </div>
+    </div>
+
+    <!-- card -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 d-flex justify-content-center text-center">
+          <div class="card border-0">
+            <img src="images/nike1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Nike VaporX 12</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="text-decoration-line-through fs-5">Rp. 785.000</h5>
+              <h5 class="card-title text-center fs-4">Rp. 714.000</h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center">Beli</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center text-center">
+          <div class="card border-0">
+            <img src="images/specs.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Specs LightSpeed</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="text-decoration-line-through fs-5">Rp. 590.900</h5>
+              <h5 class="card-title text-center fs-4">Rp. 549.000</h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center">Beli</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center text-center">
+          <div class="card border-0">
+            <img src="images/bbs1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Ortuseight BBS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="text-decoration-line-through fs-5">Rp. 680.000</h5>
+              <h5 class="card-title text-center fs-4" id="promo">Rp. 635.000</h5>
+              <a href="#" class="btn btn-primary d-flex justify-content-center">Beli</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diskon -->
+    <div class="container mt-5">
+      <div class="row text-center bg-info text-light">
+        <div class="col">
+          <h1>Diskon 80%</h1>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-4">
+          <img src="images//kumpulanfutsal.jpg" width="350" alt="" class="mb-3" />
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-3 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Laptop</th>
+                <th scope="col">Diskon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Nike</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ortuseight</td>
+                <td>70%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Specs</td>
+                <td>60%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="jumbotron jumbotron-fluid bg-secondary text-light">
+      <div class="container" id="tentang">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>
+              <strong> IlsyahShop </strong><br />
+              SIDOARJO JAWA TIMUR <br />
+              Indonesia 61234
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <strong> Pembayaran </strong> <br />
+              BRI <br />
+              1234567 <br />
+              BCA <br />
+              1234567 <br />
+              DANA <br />
+              1234567
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <strong> IlsyahShop </strong> <br />
+              IlsyahShop didirikan pada tahun 2005
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form Kontak</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <div id="emailHelp" class="form-text">Isi nama dan alamat anda</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Kota</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Sidoarjo</option>
+                      <option value="2">Surabaya</option>
+                      <option value="3">Yogyakarta</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Kode Pos</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kirim!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- signin -->
+    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Isi Data Diri :</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col mb-3">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mb-3">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                  <span class="input-group-text" id="basic-addon2">@email.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LogIn :</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address/Username :</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password :</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
